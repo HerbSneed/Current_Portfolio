@@ -1,11 +1,37 @@
-* {margin: 0; padding: 0; box-sizing: border-box; font-size: 16px;}
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-size: 16px;
+  color: white;
+}
+
+:root{
+  --dark: #0D1518;
+  --bordercolor: #5F9AB0;
+  --labelbox: #2B3133;
+}
+
+h1, h2, a{
+  font-family: 'Poiret One', cursive;
+  font-size: bold;
+  letter-spacing: 2px;
+}
 
 a{
-  text-decoration: underline;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 500ms;
+}
+
+a:hover{
+  font-size: 20px;
 }
 
 body{
   height: 100vh;
+  background-color: var(--dark);
 }
 
 main{
@@ -14,68 +40,94 @@ main{
   flex-direction: column;
 }
 
-.herb{
+
+
+.herb-header{
   position: relative;
-  background-color: forestgreen;
+  display: flex;
+  background-color: var(--dark);
   height: 50px;
   padding: 6px 0 6px 0;
+  /* border-bottom: 2px solid var(--bordercolor); */
 }
 
-.herb h1{
+.herb-header h1{
   position: absolute;
   display: block;
   font-size: 2rem;
   padding: 0 20px 0 40px;
-  background-color: lightgreen;
+  background-color: var(--bordercolor);
   color: white;
+  border-radius: 0 2px 2px 0;
 }
 
-.herb nav{
+.herb-header nav{
+  margin-top: 10px;
   position: absolute;
   display: block;
   color: white;
   right: 15px;
-  padding: 10px 0 10px 0;
+  padding: 0px 0 0px 0;
 }
 
-.herb nav a{
+.herb-header nav a{
   padding-right: 15px;
 }
 
 .banner{
+  display: flex;
   width: 100%;
   height: 300px;
-  position: relative;  
-  background-color: skyblue;
+  position: absolute;  
+  background-image: url("./Images/tech-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+}
+
+.banner img{
+  margin: auto;
+  border-radius: 10px;
+  border: 3px solid var(--bordercolor);
 }
 
 .banner p{
   padding: 4px;
   position: absolute;
-  background-color: lightgreen;
   right: 40px;
   bottom: 20px;
+  background-color: var(--bordercolor);
+  border-radius: 2px;
 }
 
 .about-me{
+  display: flex;
   position: relative;
-  margin-top: 10px;
+  margin-top: 320px;
   width: 100%;
   height: 200px;
+  border: 2px solid white;
 }
 
-.about-me h1{
+.about-me div{
+  display: flex;
+}
+
+.about-me div h1{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   display: block;
   padding-right: 20px;
   font-size: 2rem;
   width: 20%;
-  border-right: 2px solid forestgreen;
+  border-right: 2px solid var(--bordercolor);
   height: 198px;
   text-align: right;
 }
 
-.about-me p{
+.about-me div p{
   position: absolute;
   margin: auto;
   right: 0;
@@ -86,89 +138,96 @@ main{
 }
 
 .work {
+  display: flex;
   position: relative;
   margin-top: 10px;
   width: 100%;
-  height: 675px;
+  height: 950px;
 }
 
-.work h1{
+.work div{
+  display: flex;
+}
+
+.work div h1{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   display: block;
   padding-right: 20px;
   font-size: 2rem;
   width: 20%;
-  border-right: 2px solid forestgreen;
-  height: 675px;
+  border-right: 2px solid var(--bordercolor);
+  height: 950px;
   text-align: right;
 }
 
 .work-flex{
   display: flex;
   flex-wrap: wrap;
+  align-content:normal ;
+  justify-content: space-between;
+  flex-wrap: wrap;
   position: absolute;
   right: 0;
-  padding-left: 20px;
+  padding-left: 20px;  
+  padding-right: 20px;
   width: 80%;
-  padding-right: 30px;
-  justify-content: space-between;
 }
 
-.work-flex .d1{
+.work-flex .big-div{
+  flex: 1 1 80%;
   margin-top: 0;
-  height: 300px;
+  height: 590px;
   border: 2px solid skyblue;
-  float: left;
-  width: 100%;
   background-color: lightgray;
+
 }
 
-.work div{
-  flex-direction: row;
-  width: 49.8%;
+.work-flex .lil-div{
+  flex: 0 0 49.5%;
   margin-top: 10px;
-  height: 175px;
-  border: 2px solid skyblue;
+  height: 165px;
+  border: 2px solid var(--bordercolor);
   background-color: lightgray;
 }
 
 .contact-me{
+  display: flex;
   position: relative;
+  width: 100%;
   margin-top: 10px;
   height: 100px;
 }
 
-.contact-me h1{
-  margin-top: 10px;
+.contact-me div h1{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   display: block;
   padding-right: 20px;
   font-size: 2rem;
   width: 20%;
-  border-right: 2px solid forestgreen;
+  border-right: 2px solid var(--bordercolor);
   height: 90px;
   text-align: right;
 }
-.contact-me div{
+
+.contact-me .nav-box{
+  width: 80%;
+  height: 100px;
   position: absolute;
-  width: 500px;
-  height: 90px;
-  margin: auto;
-  background-color: skyblue;
-  overflow: hidden;
+  right: 0;
+} 
   
-}
-.contact-me div nav{
-  position: absolute;
-  width: 100%;
-  line-height: 20px;
-  margin: 0 20% 0 20%;
-  
+.contact-me nav{
+  display: block;
+  text-align: center;
+  height: 100px;
+  margin-top: 30px;
+
 }
 
-
-.contact-me div nav a{
-  display: inline;
-  padding: 30px;
-  color: black;
+.contact-me nav a{
+  padding-right: 20px;
 }
