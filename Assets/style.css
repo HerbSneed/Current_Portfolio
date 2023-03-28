@@ -1,16 +1,31 @@
 * {
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
   font-size: 16px;
   color: white;
 }
 
 :root{
-  --dark: #0D1518;
-  --bordercolor: #5F9AB0;
+  --dark: black;
+  --bordercolor: white;
   --labelbox: #2B3133;
 }
+
+body{
+  background-color: var(--dark);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
 
 h1, h2, a{
   font-family: 'Poiret One', cursive;
@@ -29,22 +44,9 @@ a:hover{
   font-size: 20px;
 }
 
-body{
-  height: 100vh;
-  background-color: var(--dark);
-}
-
-main{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-
-
 .herb-header{
   position: relative;
-  display: flex;
+  width: 100%;
   background-color: var(--dark);
   height: 50px;
   padding: 6px 0 6px 0;
@@ -58,7 +60,7 @@ main{
   padding: 0 20px 0 40px;
   background-color: var(--bordercolor);
   color: white;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .herb-header nav{
@@ -67,29 +69,33 @@ main{
   display: block;
   color: white;
   right: 15px;
-  padding: 0px 0 0px 0;
+  padding: 0px 15px 0px 0;
 }
 
 .herb-header nav a{
-  padding-right: 15px;
+  padding-left: 10px;
 }
 
 .banner{
-  display: flex;
   width: 100%;
-  height: 300px;
-  position: absolute;  
-  background-image: url("./Images/tech-bg.jpg");
+  height: 250px;
+  position: relative;  
+  background-image: 
+  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), black 100%),
+  url("./Images/cyber-city.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-
+  background-position-y: 55%;
+  background-position-x: center;
+  background-size: 100%;
+  filter: grayscale(100%);
+  backdrop-filter: grayscale;
+  background-color: gray;
+  background-blend-mode: hard-light ;
 }
 
 .banner img{
   margin: auto;
   border-radius: 10px;
-  border: 3px solid var(--bordercolor);
 }
 
 .banner p{
@@ -98,111 +104,166 @@ main{
   right: 40px;
   bottom: 20px;
   background-color: var(--bordercolor);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .about-me{
-  display: flex;
   position: relative;
-  margin-top: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
   width: 100%;
-  height: 200px;
-  border: 2px solid white;
+  min-height: 120px;
+  margin-right: 20px;
+  overflow: scroll;
 }
 
-.about-me div{
-  display: flex;
-}
 
 .about-me div h1{
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  display: block;
   padding-right: 20px;
   font-size: 2rem;
   width: 20%;
-  border-right: 2px solid var(--bordercolor);
-  height: 198px;
   text-align: right;
 }
 
 .about-me div p{
+  border-left: 2px solid var(--bordercolor);
   position: absolute;
-  margin: auto;
   right: 0;
   padding-left: 20px;
-  display: block;
   width: 80%;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
-.work {
-  display: flex;
-  position: relative;
-  margin-top: 10px;
+.work{
+  /* position: relative; */
+  /* margin-top: 10px; */
   width: 100%;
-  height: 950px;
-}
-
-.work div{
-  display: flex;
+  height: 100%;
 }
 
 .work div h1{
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  display: block;
   padding-right: 20px;
   font-size: 2rem;
   width: 20%;
-  border-right: 2px solid var(--bordercolor);
-  height: 950px;
   text-align: right;
 }
 
 .work-flex{
-  display: flex;
-  flex-wrap: wrap;
-  align-content:normal ;
-  justify-content: space-between;
-  flex-wrap: wrap;
   position: absolute;
   right: 0;
-  padding-left: 20px;  
-  padding-right: 20px;
-  width: 80%;
-}
-
-.work-flex .big-div{
-  flex: 1 1 80%;
-  margin-top: 0;
-  height: 590px;
-  border: 2px solid skyblue;
-  background-color: lightgray;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;  
+  border-left: 2px solid var(--bordercolor);
+  gap: 5px;
+  /* margin-top: ; */
 
 }
 
-.work-flex .lil-div{
-  flex: 0 0 49.5%;
-  margin-top: 10px;
-  height: 165px;
+.work-div{
+  position: relative;
   border: 2px solid var(--bordercolor);
-  background-color: lightgray;
+  width: 600px; 
+}
+
+
+.project-1{
+  min-height: 600px;
+  flex:1 1 80%; 
+}
+
+.project-1 img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.project-1 div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px 10px 20px;
+  margin-top: 160px;
+  border-radius: 0 5px 5px 0;
+}
+
+.project-2{
+  flex:1 1 40%;
+  min-height: 225px;
+  min-width: 400px;  
+}
+
+.project-2 div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px 10px 20px;
+  margin-top: 160px;
+  border-radius: 0 5px 5px 0;
+}
+
+.project-2 img{
+  width: 100%;
+  height: 225px;
+}
+
+.project-3{
+  flex:1 1 40%;
+  min-width: 400px;
+}
+
+/* .project-3 div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px 10px 20px;
+  margin-top: 160px;
+  border-radius: 0 5px 5px 0;
+} */
+
+.project-3 img{
+}
+
+.project-4{
+  flex:1 1 40%;
+  min-height: 225px;
+  min-width: 400px;
+}
+
+/* .project-4 div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px 10px 20px;
+  margin-top: 160px;
+  border-radius: 0 5px 5px 0;
+ } */
+
+
+.project-5{
+  flex:1 1 40%;
+  min-height: 225px;
+  min-width: 400px;
+}
+
+.project-5 div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 160px;
+  border-radius: 0 5px 5px 0;
 }
 
 .contact-me{
-  display: flex;
-  position: relative;
+  margin-top: auto;
   width: 100%;
-  margin-top: 10px;
   height: 100px;
+  background-color: white;
+  border: 2px solid var(--bordercolor);
 }
 
-.contact-me div h1{
-  display: flex;
-  flex-direction: column;
+ /* .contact-me div h1{
   position: absolute;
   display: block;
   padding-right: 20px;
@@ -230,4 +291,4 @@ main{
 
 .contact-me nav a{
   padding-right: 20px;
-}
+} */
