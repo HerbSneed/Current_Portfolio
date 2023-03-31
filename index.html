@@ -7,116 +7,116 @@
     <link rel="stylesheet" type="text/css" href="./Assets/reset.css" />
     <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-
   </head>
 
+
   <body>
+<!-- Header -->
     <header class="herb-header">
       <h1>Herb M. Sneed</h1>
       <nav>
-        <a href="" target="_blank">ABOUT ME</a>
-        <a href="" target="_blank">WORK</a>
-        <a href="" target="_blank">CONTACT ME</a>
-        <a href="" target="_blank">RESUME</a>
+        <a href="#about-me" target="_blank">ABOUT ME</a>
+        <a href="#work" target="_blank">WORK</a>
+        <a href="#contact-me" target="_blank">CONTACT ME</a>
+        <a href="../Assets/Documents/herbsneed-2023-resume.pdf" alt="resume pdf" download="Herb Sneed Resume">RESUME</a>
       </nav>
     </header>
 
+<!-- Banner -->
     <section class="banner">
-        <!-- <img src="Assets/Images/herb-profile.jpg" alt="herb on a boat"/> -->
-      <p>Cool Subtitle Here!</p>
+      <img src="Assets/Images/herb-avatar.png" alt="Herb's Profile Picture"/>
+      <p>“Old ways don't open new doors.”</p>
     </section>
 
+<!-- Main section of website begins here -->
     <main>
-      <section class="about-me">
+      <section id="about-me" class="about-me">
         <div>
           <h1>ABOUT <br/>ME<br/></h1>
         </div>
 
+<!-- Paragraph telling the user about the developer -->
         <div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,
-            aliquid facere laborum architecto eos vitae quas ipsum consectetur
-            alias delectus minus inventore repellat soluta ea sequi cumque iste
-            nobis hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Itaque, aliquid facere laborum architecto eos vitae quas ipsum
-            consectetur alias delectus minus inventore repellat soluta ea sequi
-            cumque iste nobis hic.<br><br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,
-            aliquid facere laborum architecto eos vitae quas ipsum consectetur
-            alias delectus minus inventore repellat soluta ea sequi cumque iste
-            nobis hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Itaque, aliquid facere laborum architecto eos vitae quas ipsum
-            consectetur alias delectus minus inventore repellat soluta ea sequi
-            cumque iste nobis hic.
+            My name is Herb Sneed.  I'm a veteran of the United States Air Force, where I served in North Carolina, Saudi Arabia and South Korea.  After my enlistment, I enrolled into College at East Carolina University were I majored in Mass Communication with a focus in Media Production.  Upon graduation, I moved to Atlanta, Georgia where I produced content for non-profits and start-up production companies.  After four years I moved to San Francisco and attend the Academy of Art Univesity and earned a MFA in Film; focusing in Film Editing and Visual Effects.  Once I graduated, I relocated to Los Angeles and worked for nearly 10 years on shows like, Big Brother, Ridiculousness, A Million Little Things and RuPaul Drag Race; just to name a few.  Looking for something new and exciting I decided to take a stab at software development and enrolled into the UNC Chapel Hill Coding Bootcamp. 
           </p>
         </div>
       </section>
 
-      <section class="work">
+<!-- Examples of the developers past projects -->
+      <section id="work" class="work">
         <div>
           <h1>WORK</h1>
         </div>
 
-        <div class="work-flex">
-          <div class="work-div project-1">
-
-            <div class="workheader">
-              <h2>Surf</h2>
-              <h3>MERN Stack</h3>
+          <div class="work-flex">
+            <div class="work-div project-1">
+              <div>
+                <h2>Surf Report</h2>
+                <h3>MERN Stack</h3>
+              </div>
+            <a href="../Sub-Pages/surf-report.html">
+              <img src="Assets/Images/herb-surf-01.jpg" alt="guy surfing">
+            </a>
             </div>
-          <img src="Assets/Images/herb-surf-01.jpg" width="600px" height="600px">
-          </div>
 
           <div class="work-div project-2">
-            <div class="workheader">
+            <div>
               <h2>LED Wall</h2>
               <h3>Node - IoT</h3>
             </div>
-            <img src="Assets/Images/herb-LED.webp">
+            <a href="../Sub-Pages/led-wall.html">
+              <img src="Assets/Images/herb-LED.webp" alt="image of LED Wall">
+            </a>
           </div>
 
           <div class="work-div project-3">
             <div>
-              <!-- <h2>Calculator</h2>
-              <h3>React - Java Script - CSS</h3> -->
+              <h2>Calculator</h2>
+              <h3>React - Java Script - CSS</h3>
             </div>
-            <img>
-          <img>
+            <a href="../Sub-Pages/calculator.html">
+              <img src="Assets/Images/herb-Calculator.jpeg" width="400px" height="250px" alt="image of calculator">
+            </a>
           </div>
 
           <div class="work-div project-4">
-            <div class="workheader">
-              <!-- <h2>Pastel Puzzles</h2>
-              <h3>MERN Stack</h3> -->
+            <div>
+              <h2>Pastel Puzzles</h2>
+              <h3>MERN Stack</h3>
             </div>
-          <img>
+            <a href="../Sub-Pages/pastel-puzzles.html">
+              <img src="Assets/Images/herb-puzzle.jpeg">
+            </a>
           </div>
 
           <div class="work-div project-5">
-            <div class="workheader">
-              <!-- <h2>Run Buddy</h2>
-              <h3>HTML CSS</h3> -->
-            <img>
+            <div>
+              <h2>Run Buddy</h2>
+              <h3>HTML CSS</h3>
             </div>
+            <a href="../Sub-Pages/run-buddy.html">           
+              <img src="Assets/Images/herb_Run.jpeg">
+            </a>
           </div>
         </div>      
       </section>
     </main>
 
-    <footer class="contact-me">
-        <!-- <div>
+<!-- Webpage footer with contact info and social media links -->
+    <footer id="contact-me" class="contact-me">
+      <div>
         <h1>CONTACT<br>ME<br></h1>
-        </div>
+      </div>
         
-        <div class="nav-box">
-          <nav>
-            <a>323-439-9732</a>
-            <a>HMSNEED@GMAIL.COM</a>
-            <a>GITHUB</a>
-            <a>TWITTER</a>
-            <a>SPOTIFY</a>
-          </nav>
-        </div> -->
+      <div class="nav-box">
+        <nav>
+          <a href="tel:3234399732">323-439-9732</a>
+          <a href="mailto:hmsneed@gmail.com" target="_blank">HMSNEED@GMAIL.COM</a>
+          <a href="https://github.com/HerbSneed" target="_blank">GITHUB</a>
+          <a href="https://twitter.com/H_Sneed" target="_blank">TWITTER</a>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
