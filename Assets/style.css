@@ -190,7 +190,7 @@ img{
   width: 100%;
   height: 650px;
   object-fit: cover;
-  object-position: 0;
+  object-position: center;
 }
 
 .project-1 div {
@@ -225,7 +225,7 @@ img{
   width: 100%;
   height: 245px;
   object-fit: cover;
-  object-position: 0;
+  object-position: center;
   overflow: hidden;
 }
 
@@ -252,7 +252,7 @@ img{
   width: 100%;
   height: 245px;
   object-fit: cover;
-  object-position: 0;
+  object-position: center;
   overflow: hidden;
 }
 
@@ -277,9 +277,9 @@ img{
 
 .project-4 img{
   width: 100%;
-  height: 245px;
+  height: 246px;
   object-fit: fill;
-  object-position: 0;
+  object-position: center;
   overflow: hidden;
 }
 
@@ -544,7 +544,7 @@ img{
   
   .project-2{
     position: relative;
-    flex:1 1 80%;
+    flex:1 1 40%;
     height: 200px;
     width: 400px;  
   }
@@ -563,6 +563,7 @@ img{
     height: 200px;
     object-fit: cover;
     overflow: hidden;
+    object-position: center;
   }
   
   .project-2 h2 {
@@ -588,7 +589,7 @@ img{
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: 0;
+    object-position: center;
     overflow: hidden;
   }
   
@@ -614,9 +615,8 @@ img{
   .project-4 img{
     width: 100%;
     height: 200px;
-    object-fit: fill;
-    object-position: 0;
-    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
   }
   
   .project-4 h2 {
@@ -627,7 +627,6 @@ img{
     flex:1 1 40%;
     height: 200px;
     width: 400px;
-    box-shadow: none;
   }
   
   .project-5 div {
@@ -643,7 +642,7 @@ img{
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: 0;
+    object-position: center;
     overflow: hidden;
   }
   
@@ -725,6 +724,32 @@ img{
     font-family: 'Poiret One', cursive;
     font-size: .8rem;
     letter-spacing: 2px;
+  }
+
+  .banner{
+    width: 100%;
+    height: 250px;
+    position: relative;  
+    background-image: 
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), black 100%),
+    url("./Images/cyber-city.jpeg");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    backdrop-filter: grayscale;
+    /* background-color: darkgrey;  */
+    background-blend-mode: hard-light ;
+    overflow: hidden;
+  }
+  
+  .banner img{
+    margin: 0 auto;
+    width: 310px;
+    height: 310px;
+    mix-blend-mode: luminosity ;
+    overflow: hidden; 
   }
   
   
@@ -818,10 +843,10 @@ img{
   .project-1 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px 10px 30px;
+    padding: 10px 20px 10px 10px;
     margin-top: 320px;
     border-radius: 0 5px 5px 0;
-    width: 190px;
+    width: 170px;
   }
   
   .project-1 h2 {
@@ -838,10 +863,10 @@ img{
   .project-2 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px 5px 30px;
+    padding: 5px 10px 5px 10px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
-    width: 155px;
+    width: 135px;
   }
   
   .project-2 img{
@@ -864,10 +889,10 @@ img{
   .project-3 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px 5px 30px;
+    padding: 5px 10px 5px 10px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
-    width: 275px;
+    width: 245px;
   }
   
   .project-3 img{
@@ -891,10 +916,10 @@ img{
   .project-4 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px 5px 30px;
+    padding: 5px 10px 5px 10px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
-    width: 210px;
+    width: 190px;
   }
   
   .project-4 img{
@@ -919,10 +944,10 @@ img{
   .project-5 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px 5px 30px;
+    padding: 5px 10px 5px 10px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
-    width: 180px;
+    width: 160px;
   }
   
   .project-5 img{
