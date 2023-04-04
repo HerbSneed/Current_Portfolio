@@ -360,7 +360,7 @@ img{
 }
 
 /* Small Screens */
-@media screen and (max-width: 910px){
+/* @media screen and (max-width: 910px){
   .contact-me div h1{
     position: absolute;
     padding-right: 15px;
@@ -371,10 +371,10 @@ img{
     padding-left: 0px;
   }
 
-}
+} */
 
 /* iPads and Tablets */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 910px){
   body{
     background-color: var(--dark);
     display: flex;
@@ -544,7 +544,7 @@ img{
   
   .project-2{
     position: relative;
-    flex:1 1 40%;
+    flex:1 1 80%;
     height: 200px;
     width: 400px;  
   }
