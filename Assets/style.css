@@ -532,7 +532,7 @@ img{
   .project-1 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px 10px 30px;
+    padding: 10px 0 10px 20px;
     margin-top: 320px;
     border-radius: 0 5px 5px 0;
     width: 190px;
@@ -552,7 +552,7 @@ img{
   .project-2 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px 5px 30px;
+    padding: 5px 10px 5px 20px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
     width: 155px;
@@ -579,7 +579,7 @@ img{
   .project-3 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px 5px 30px;
+    padding: 5px 0 5px 20px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
     width: 275px;
@@ -606,7 +606,7 @@ img{
   .project-4 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px 5px 30px;
+    padding: 5px 10px 5px 20px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
     width: 210px;
@@ -632,7 +632,7 @@ img{
   .project-5 div {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px 5px 30px;
+    padding: 5px 10px 5px 20px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
     width: 180px;
