@@ -535,10 +535,10 @@ img{
     padding: 10px 0 10px 20px;
     margin-top: 320px;
     border-radius: 0 5px 5px 0;
-    width: 190px;
+    width: 200px;
   }
   
-  .project-1 h2 {
+  .project-1 div h2 {
     font-size: 1.5rem;
   }
   
@@ -582,7 +582,7 @@ img{
     padding: 5px 0 5px 20px;
     margin-top: 130px;
     border-radius: 0 5px 5px 0;
-    width: 275px;
+    width: 290px;
   }
   
   .project-3 img{
