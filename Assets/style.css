@@ -70,7 +70,7 @@ img{
   position: relative;  
   background-image: 
   linear-gradient(to bottom, rgba(245, 246, 252, 0.52), black 100%),
-  url("./Images/cyber-city.jpeg");
+  url("./images/cyber-city.jpeg");
   background-repeat: no-repeat;
   background-position-y: 55%;
   background-position-x: center;
@@ -732,7 +732,7 @@ img{
     position: relative;  
     background-image: 
     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), black 100%),
-    url("./Images/cyber-city.jpeg");
+    url("./images/cyber-city.jpeg");
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: center;
