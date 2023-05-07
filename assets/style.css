@@ -69,7 +69,7 @@ img{
   height: 250px;
   position: relative;  
   background-image: 
-  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), black 100%),
+  linear-gradient(to bottom, rgba(68, 68, 68, 0.6), black 100%),
   url("./images/cyber-city.jpeg");
   background-repeat: no-repeat;
   background-position-y: 55%;
@@ -77,7 +77,6 @@ img{
   background-size: 100%;
   filter: grayscale(100%);
   backdrop-filter: grayscale;
-  /* background-color: darkgrey;  */
   background-blend-mode: hard-light ;
   overflow: hidden;
 }
