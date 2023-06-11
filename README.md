@@ -6,8 +6,8 @@
 
 
 
-# 02 Advanced CSS: Portfolio
-This is a responsive (Desktop, Tablet or Moble Device compatible) portfolio webpage for future content created in my coding bootcamp.  
+# 02 Portfolio
+My portfolio webpage for present & future content created.  
 
 ## Page Contents
 The page contains a Header, Banner, Main Content and a footer.
@@ -30,7 +30,8 @@ Each landing page has a home button that will allow the user to return to the ma
 ### Contact Me
 When the user click on Contact Me, the browser automatically scrolls to the footer (Contact Me Section) where there are clickable links to contact me via telephone (with FaceTime, Duo, or which ever defaul application is set up on the users device), email (with users default email applicaation), GitHub (links to my GitHub account) and Twitter (links to my twitter page).
 
-
+### Url
+https://herbsneed.github.io/Current_Portfolio/
 
 
 
